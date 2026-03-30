@@ -42,6 +42,7 @@ def getmeowfacts():
 
 @bot.event
 async def on_ready():
+    await bot.tree.sync()
     print(f"online")
 
 
